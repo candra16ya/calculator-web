@@ -9,8 +9,10 @@
 </header>
 
 <body>
-
- <?php
+ 
+    <form action="<?php $_SERVER['PHP_SELF']; ?>" method="get">
+        
+<?php
  if (isset($_GET['operation'])) {
     $x = $_GET['num1'];
     $y = $_GET['num2'];
@@ -29,9 +31,6 @@
     }
  }
 ?>
- 
-    <form action="<?php $_SERVER['PHP_SELF']; ?>" method="get">
-
         <input name="num1" value="<?php echo $x; ?>" id="n1"  placeholder="First Number"><br>
         <input name="num2" value="<?php echo  $y; ?>" id="n2" placeholder="Second Number"><br>
         <input type="submit" name="operation" value="+" id="subplus" >

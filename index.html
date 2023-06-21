@@ -1,4 +1,18 @@
-<?php
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1 id="_judul">CALCULATOR</h1>
+</header>
+
+<body>
+
+ <?php
  if (isset($_GET['operation'])) {
     $x = $_GET['num1'];
     $y = $_GET['num2'];
@@ -17,19 +31,7 @@
     }
  }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CALCULATOR</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
-    <h1 id="_judul">CALCULATOR</h1>
-</header>
-
-<body>
-    
+ 
     <form action="<?php $_SERVER['PHP_SELF']; ?>" method="get">
 
         <input name="num1" value="<?php echo $x; ?>" id="n1"  placeholder="First Number"><br>
